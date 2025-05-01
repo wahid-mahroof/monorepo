@@ -1,6 +1,6 @@
 import { WebSocketServer } from "ws";
 import jwt, { JwtPayload } from "jsonwebtoken";
-import { JWT_SECRET } from "./config";
+import JWTSECRET from "..Apps/package.json/backend-commonx";
 
 const wss = new WebSocketServer({ port: 8080 });
 
